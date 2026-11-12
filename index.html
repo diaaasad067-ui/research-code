@@ -3,65 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#10131b">
-  <title>X | نظام الجيم</title>
+  <meta name="theme-color" content="#101410">
+  <title>Arnold Split | Mody Diaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="logo" href="#">X<span>.</span></a>
-    <nav><a href="#plan">الجدول</a><a href="#tips">نصائح</a></nav>
-    <span class="tag">GYM PLAN</span>
+    <a class="brand" href="#"><span class="brand-mark">MD</span><span>MODY <b>DIAA</b></span></a>
+    <nav><a href="#schedule">الجدول</a><a href="#about">عن النظام</a><a href="#tips">نصائح</a></nav>
+    <button class="theme-btn" id="themeBtn" aria-label="تغيير المظهر">☼</button>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">ابدأ بهدوء • استمر بانتظام</p>
-        <h1>نظام تمرينك<br><span>على X</span></h1>
-        <p class="intro">جدول بسيط يقسم التمارين حسب مجموعة العضلات، مع مساحة للراحة والتدرّج الآمن.</p>
-        <a class="primary" href="#plan">شوف الجدول <span>←</span></a>
+        <p class="eyebrow"><span></span> TRAIN SMART • STAY CONSISTENT</p>
+        <h1>ARNOLD<br><em>SPLIT</em></h1>
+        <p class="hero-text">نظّم تمرينك، تابع أيامك، وخلي الاستمرارية هي سر تقدمك.</p>
+        <a class="primary-btn" href="#schedule">استكشف الجدول <span>←</span></a>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="x-mark">X</div><div class="mini-label">MOVE<br>SMART</div>
+      <div class="hero-art" aria-label="رسم توضيحي لأوزان الجيم">
+        <div class="ring ring-one"></div><div class="ring ring-two"></div>
+        <div class="weight"><i></i><b></b><i></i></div>
+        <div class="hero-tag">DISCIPLINE<br><strong>OVER EXCUSES</strong></div>
+        <span class="art-number">01 / 06</span>
       </div>
+      <div class="hero-foot"><span>WORKOUT PLANNER</span><span>DESIGNED BY <b>MODY DIAA</b></span></div>
     </section>
 
-    <section id="plan" class="section">
+    <section class="section" id="schedule">
       <div class="section-heading">
-        <div><p class="eyebrow">YOUR WEEKLY SPLIT</p><h2>اختار يوم التمرين</h2></div>
-        <p class="muted">اضغط على أي مجموعة لعرض التمارين</p>
+        <div><p class="eyebrow">YOUR WEEKLY PLAN</p><h2>جدول <em>التمرين</em></h2></div>
+        <p class="section-note">اختار اليوم عشان تشوف تفاصيله</p>
       </div>
-      <div class="tabs" role="tablist" aria-label="أيام التمرين">
-        <button class="tab active" data-day="chest" role="tab" aria-selected="true">الصدر</button>
-        <button class="tab" data-day="back" role="tab" aria-selected="false">الظهر</button>
-        <button class="tab" data-day="shoulders" role="tab" aria-selected="false">الكتف</button>
-        <button class="tab" data-day="arms" role="tab" aria-selected="false">الذراع</button>
-      </div>
-      <article class="workout-card">
-        <div class="workout-top">
-          <div><p class="eyebrow" id="day-kicker">DAY 01</p><h3 id="day-title">تمارين الصدر</h3></div>
-          <span class="day-icon" id="day-icon">01</span>
-        </div>
-        <p id="day-desc" class="day-desc"></p>
-        <div id="exercise-list" class="exercise-list"></div>
-        <p class="note" id="day-note"></p>
+      <div class="week-grid" id="weekGrid"></div>
+      <article class="day-detail" id="dayDetail" aria-live="polite"></article>
+    </section>
+
+    <section class="info-grid" id="about">
+      <article class="info-card accent-card">
+        <span class="info-icon">✦</span><p class="eyebrow">ABOUT THE SPLIT</p>
+        <h3>يعني إيه<br>Arnold Split؟</h3>
+        <p>تقسيمة تدريب بتوزّع مجموعات عضلية مختلفة على أيام الأسبوع. الجدول هنا نموذج مبسّط قابل للتعديل حسب الخبرة والاستشفاء.</p>
+      </article>
+      <article class="info-card" id="tips">
+        <span class="info-icon">↗</span><p class="eyebrow">SMART TRAINING</p>
+        <h3>تمرّن بذكاء</h3>
+        <ul>
+          <li>ابدأ بإحماء خفيف وحركات تحضيرية.</li>
+          <li>اختار مقاومة تقدر تتحكم فيها بتكنيك سليم.</li>
+          <li>اهتم بالنوم والراحة والأكل المتوازن.</li>
+          <li>لو فيه ألم أو دوخة، أوقف التمرين واطلب مساعدة مختص.</li>
+        </ul>
       </article>
     </section>
-
-    <section id="tips" class="tips section">
-      <p class="eyebrow">TRAIN SMART</p><h2>قواعد مهمة</h2>
-      <div class="tip-grid">
-        <div class="tip"><span>01</span><h3>إحماء الأول</h3><p>ابدأ بـ 5–10 دقائق حركة خفيفة وتمارين إحماء مناسبة.</p></div>
-        <div class="tip"><span>02</span><h3>التكنيك أهم</h3><p>استخدم مقاومة خفيفة تسمح لك بأداء الحركة بشكل صحيح ومن غير ألم.</p></div>
-        <div class="tip"><span>03</span><h3>راحة وتعافي</h3><p>اترك وقتًا كافيًا للراحة بين الأيام، ونَم جيدًا واشرب ماء.</p></div>
-      </div>
-      <p class="safety">ملاحظة: الجدول مثال عام للمبتدئين، وليس برنامجًا طبيًا أو بديلًا عن مدرب مؤهل. لو أنت لسه في سن النمو، تمرّن تحت إشراف مدرب أو شخص بالغ مؤهل، وتجنب الأوزان القصوى. أوقف التمرين لو ظهر ألم.</p>
-    </section>
+    <p class="safety-note">ملاحظة: ده نموذج عام للتنظيم وليس برنامجًا طبيًا أو وصفة تدريب شخصية. لو لسه في مرحلة النمو، خليك تحت إشراف مدرب مؤهل أو شخص بالغ مسؤول، وابدأ بأحمال مناسبة من غير اختبارات أوزان قصوى.</p>
   </main>
 
-  <footer><a class="logo" href="#">X<span>.</span></a><p>خليك منتظم، وخلي التمرين آمن وممتع.</p></footer>
+  <footer><div class="brand"><span class="brand-mark">MD</span><span>MODY <b>DIAA</b></span></div><p>DESIGNED BY <strong>MODY DIAA</strong></p><span>© <span id="year"></span> • ALL RIGHTS RESERVED</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
