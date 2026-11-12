@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131b">
+  <title>X | نظام الجيم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">X<span>.</span></a>
+    <nav><a href="#plan">الجدول</a><a href="#tips">نصائح</a></nav>
+    <span class="tag">GYM PLAN</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ابدأ بهدوء • استمر بانتظام</p>
+        <h1>نظام تمرينك<br><span>على X</span></h1>
+        <p class="intro">جدول بسيط يقسم التمارين حسب مجموعة العضلات، مع مساحة للراحة والتدرّج الآمن.</p>
+        <a class="primary" href="#plan">شوف الجدول <span>←</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="x-mark">X</div><div class="mini-label">MOVE<br>SMART</div>
+      </div>
+    </section>
+
+    <section id="plan" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR WEEKLY SPLIT</p><h2>اختار يوم التمرين</h2></div>
+        <p class="muted">اضغط على أي مجموعة لعرض التمارين</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="أيام التمرين">
+        <button class="tab active" data-day="chest" role="tab" aria-selected="true">الصدر</button>
+        <button class="tab" data-day="back" role="tab" aria-selected="false">الظهر</button>
+        <button class="tab" data-day="shoulders" role="tab" aria-selected="false">الكتف</button>
+        <button class="tab" data-day="arms" role="tab" aria-selected="false">الذراع</button>
+      </div>
+      <article class="workout-card">
+        <div class="workout-top">
+          <div><p class="eyebrow" id="day-kicker">DAY 01</p><h3 id="day-title">تمارين الصدر</h3></div>
+          <span class="day-icon" id="day-icon">01</span>
+        </div>
+        <p id="day-desc" class="day-desc"></p>
+        <div id="exercise-list" class="exercise-list"></div>
+        <p class="note" id="day-note"></p>
+      </article>
+    </section>
+
+    <section id="tips" class="tips section">
+      <p class="eyebrow">TRAIN SMART</p><h2>قواعد مهمة</h2>
+      <div class="tip-grid">
+        <div class="tip"><span>01</span><h3>إحماء الأول</h3><p>ابدأ بـ 5–10 دقائق حركة خفيفة وتمارين إحماء مناسبة.</p></div>
+        <div class="tip"><span>02</span><h3>التكنيك أهم</h3><p>استخدم مقاومة خفيفة تسمح لك بأداء الحركة بشكل صحيح ومن غير ألم.</p></div>
+        <div class="tip"><span>03</span><h3>راحة وتعافي</h3><p>اترك وقتًا كافيًا للراحة بين الأيام، ونَم جيدًا واشرب ماء.</p></div>
+      </div>
+      <p class="safety">ملاحظة: الجدول مثال عام للمبتدئين، وليس برنامجًا طبيًا أو بديلًا عن مدرب مؤهل. لو أنت لسه في سن النمو، تمرّن تحت إشراف مدرب أو شخص بالغ مؤهل، وتجنب الأوزان القصوى. أوقف التمرين لو ظهر ألم.</p>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#">X<span>.</span></a><p>خليك منتظم، وخلي التمرين آمن وممتع.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
